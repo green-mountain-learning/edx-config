@@ -20,8 +20,8 @@ fi
 git clone https://github.com/green-mountain-learning/edx-config.git -b main /home/ubuntu/edx-config
 
 # copy files into position
-sudo mv /home/ubuntu/edx-config/*.yml /edx/etc/
-
+sudo mv /home/ubuntu/edx-config/etc/*.yml /edx/etc/
+sudo rm -r /home/ubuntu/edx-config
 
 # ensure permissions and ownership are correct.
 sudo chown root /edx/etc/*.yml
