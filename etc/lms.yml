@@ -15,7 +15,7 @@ AFFILIATE_COOKIE_NAME: dev_affiliate_id
 ALTERNATE_WORKER_QUEUES: cms
 ANALYTICS_API_KEY: ''
 ANALYTICS_API_URL: http://localhost:18100
-ANALYTICS_DASHBOARD_NAME: Green Mountain Learning Here Insights
+ANALYTICS_DASHBOARD_NAME: Green Mountain Learning Insights
 ANALYTICS_DASHBOARD_URL: http://localhost:18110/courses
 API_ACCESS_FROM_EMAIL: api-requests@example.com
 API_ACCESS_MANAGER_EMAIL: api-access@example.com
@@ -466,7 +466,7 @@ PDF_RECEIPT_TERMS_AND_CONDITIONS: 'Enter your receipt terms and conditions here.
     '
 PLATFORM_DESCRIPTION: Your Platform Description Here
 PLATFORM_FACEBOOK_ACCOUNT: http://www.facebook.com/YourPlatformFacebookAccount
-PLATFORM_NAME: Green Mountain Learning Here
+PLATFORM_NAME: Green Mountain Learning
 PLATFORM_TWITTER_ACCOUNT: '@YourPlatformTwitterAccount'
 POLICY_CHANGE_GRADES_ROUTING_KEY: edx.lms.core.default
 PRESS_EMAIL: press@example.com

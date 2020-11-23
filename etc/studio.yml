@@ -1,7 +1,7 @@
 ACTIVATION_EMAIL_SUPPORT_LINK: ''
 AFFILIATE_COOKIE_NAME: dev_affiliate_id
 ALTERNATE_WORKER_QUEUES: lms
-ANALYTICS_DASHBOARD_NAME: Green Mountain Learning Here Insights
+ANALYTICS_DASHBOARD_NAME: Green Mountain Learning Insights
 ANALYTICS_DASHBOARD_URL: http://localhost:18110/courses
 AUTH_PASSWORD_VALIDATORS:
 -   NAME: django.contrib.auth.password_validation.UserAttributeSimilarityValidator
@@ -380,7 +380,7 @@ PASSWORD_RESET_SUPPORT_LINK: ''
 PAYMENT_SUPPORT_EMAIL: billing@example.com
 PLATFORM_DESCRIPTION: Your Platform Description Here
 PLATFORM_FACEBOOK_ACCOUNT: http://www.facebook.com/YourPlatformFacebookAccount
-PLATFORM_NAME: Green Mountain Learning Here
+PLATFORM_NAME: Green Mountain Learning
 PLATFORM_TWITTER_ACCOUNT: '@YourPlatformTwitterAccount'
 POLICY_CHANGE_GRADES_ROUTING_KEY: edx.lms.core.default
 PRESS_EMAIL: press@example.com
