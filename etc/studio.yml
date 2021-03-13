@@ -18,7 +18,7 @@ AWS_SECRET_ACCESS_KEY: null
 AWS_SES_REGION_ENDPOINT: email.us-east-1.amazonaws.com
 AWS_SES_REGION_NAME: us-east-1
 AWS_STORAGE_BUCKET_NAME: SET-ME-PLEASE (ex. bucket-name)
-BASE_COOKIE_DOMAIN: localhost
+BASE_COOKIE_DOMAIN: courses.greenmountainelearning.com
 BLOCKSTORE_API_URL: http://localhost:18250/api/v1
 BLOCKSTORE_PUBLIC_URL_ROOT: http://localhost:18250
 BLOCK_STRUCTURES_SETTINGS:
@@ -96,7 +96,7 @@ CERTIFICATE_TEMPLATE_LANGUAGES:
     en: English
     es: Español
 CERT_QUEUE: certificates
-CMS_BASE: courses.greenmountainelearning.com:18010
+CMS_BASE: studio.greenmountainelearning.com
 CODE_JAIL:
     limits:
         CPU: 1
@@ -146,9 +146,9 @@ COURSE_IMPORT_EXPORT_BUCKET: ''
 CREDENTIALS_INTERNAL_SERVICE_URL: http://localhost:8005
 CREDENTIALS_PUBLIC_SERVICE_URL: http://localhost:8005
 CREDIT_PROVIDER_SECRET_KEYS: {}
-CROSS_DOMAIN_CSRF_COOKIE_DOMAIN: ''
-CROSS_DOMAIN_CSRF_COOKIE_NAME: ''
-CSRF_COOKIE_SECURE: false
+CROSS_DOMAIN_CSRF_COOKIE_DOMAIN: 'courses.greenmountainelearning.com'
+CROSS_DOMAIN_CSRF_COOKIE_NAME: native-csrf-cookie
+CSRF_COOKIE_SECURE: true
 CSRF_TRUSTED_ORIGINS: []
 DASHBOARD_COURSE_LIMIT: null
 DATABASES:
@@ -239,11 +239,11 @@ FEATURES:
     CUSTOM_COURSES_EDX: false
     ENABLE_BULK_ENROLLMENT_VIEW: false
     ENABLE_COMBINED_LOGIN_REGISTRATION: true
-    ENABLE_CORS_HEADERS: false
+    ENABLE_CORS_HEADERS: true
     ENABLE_COUNTRY_ACCESS: false
     ENABLE_CREDIT_API: false
     ENABLE_CREDIT_ELIGIBILITY: false
-    ENABLE_CROSS_DOMAIN_CSRF_COOKIE: false
+    ENABLE_CROSS_DOMAIN_CSRF_COOKIE: true
     ENABLE_CSMH_EXTENDED: true
     ENABLE_DISCUSSION_HOME_PANEL: true
     ENABLE_DISCUSSION_SERVICE: true
@@ -253,15 +253,15 @@ FEATURES:
     ENABLE_GRADE_DOWNLOADS: true
     ENABLE_INSTRUCTOR_ANALYTICS: false
     ENABLE_MKTG_SITE: false
-    ENABLE_MOBILE_REST_API: false
-    ENABLE_OAUTH2_PROVIDER: false
+    ENABLE_MOBILE_REST_API: true
+    ENABLE_OAUTH2_PROVIDER: true
     ENABLE_PUBLISHER: false
     ENABLE_READING_FROM_MULTIPLE_HISTORY_TABLES: true
     ENABLE_SPECIAL_EXAMS: false
-    ENABLE_SYSADMIN_DASHBOARD: false
+    ENABLE_SYSADMIN_DASHBOARD: true
     ENABLE_THIRD_PARTY_AUTH: true
     ENABLE_VIDEO_UPLOAD_PIPELINE: false
-    PREVIEW_LMS_BASE: courses.greenmountainelearning.com
+    PREVIEW_LMS_BASE: courses.greenmountainelearning.com/
     SHOW_FOOTER_LANGUAGE_SELECTOR: false
     SHOW_HEADER_LANGUAGE_SELECTOR: false
 FEEDBACK_SUBMISSION_EMAIL: ''
@@ -312,12 +312,13 @@ LANGUAGE_CODE: en
 LANGUAGE_COOKIE: openedx-language-preference
 LEARNER_PORTAL_URL_ROOT: https://learner-portal-courses.greenmountainelearning.com
 LMS_BASE: courses.greenmountainelearning.com
-LMS_INTERNAL_ROOT_URL: http://courses.greenmountainelearning.com
+LMS_INTERNAL_ROOT_URL: http://localhost
 LMS_ROOT_URL: http://courses.greenmountainelearning.com
 LOCAL_LOGLEVEL: INFO
 LOGGING_ENV: sandbox
 LOGIN_REDIRECT_WHITELIST:
 - courses.greenmountainelearning.com
+- studio.greenmountainelearning.com
 LOG_DIR: /edx/var/log/edx
 MAINTENANCE_BANNER_TEXT: Sample banner message
 MEDIA_ROOT: /edx/var/edxapp/media/
@@ -413,11 +414,11 @@ RETIREMENT_STATES:
 SECRET_KEY: 3x0JLSFWVeci9YFEejhfuSH9ViwsmlCnziuy8DBHGuILo3uHzGZ8UXpX8X2Tm1TTS0n582qtRLjlLufP1hSy7REByPl0OyQsNU30
 SEGMENT_KEY: null
 SERVER_EMAIL: devops@example.com
-SESSION_COOKIE_DOMAIN: ''
+SESSION_COOKIE_DOMAIN: 'greenmountainelearning.com'
 SESSION_COOKIE_NAME: sessionid
-SESSION_COOKIE_SECURE: false
+SESSION_COOKIE_SECURE: true
 SESSION_SAVE_EVERY_REQUEST: false
-SITE_NAME: localhost
+SITE_NAME: studio.greenmountainelearning.com
 SOCIAL_AUTH_SAML_SP_PRIVATE_KEY: ''
 SOCIAL_AUTH_SAML_SP_PRIVATE_KEY_DICT: {}
 SOCIAL_AUTH_SAML_SP_PUBLIC_CERT: ''
@@ -488,4 +489,3 @@ ZENDESK_GROUP_ID_MAPPING: {}
 ZENDESK_OAUTH_ACCESS_TOKEN: ''
 ZENDESK_URL: ''
 ZENDESK_USER: ''
-
